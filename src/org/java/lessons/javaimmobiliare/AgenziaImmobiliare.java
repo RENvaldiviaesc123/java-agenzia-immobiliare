@@ -19,13 +19,13 @@ public class AgenziaImmobiliare {
         public void aggiungiImmobile (Immobili immobili) {
             String codice = immobili.getCodice();
             if(trovaImmobilePerCodice(codice) != null) {
-                throw new IllegalArgumentException("Immobile con codice :" + codice + " già presenti in lista.")
+                throw new IllegalArgumentException("Immobile con codice :" + codice + " già presenti in lista.");
             }
             listaImmobili.add(immobili);
         }
 
         //Metodo per la ricerca di un immobile a partire dal codice alfanumerico
-        public Immobili trovaImmobilePerCodice (String codice) {
+        public Immobili trovaImmobilePerCodice (String codice) { //gia testato
             boolean trovato = false;
             int contatore = 0;
             Immobili immobileCercato = null;
@@ -40,9 +40,9 @@ public class AgenziaImmobiliare {
         }
 
         //Metodo per restituire l’immobile che ha avuto il maggior numero di persone interessate
-        public String aumentoInteresse (int interessati) {
-            String piuBello = null;
-            int interessatomax = 0;
+        public String aumentoInteresse () {
+            String piuBello=null;
+            int interessatomax=0;
             for (Immobili immobili : listaImmobili) {
                 if (immobili.getInteressati() > interessatomax) {
                     piuBello = immobili.getCodice();
