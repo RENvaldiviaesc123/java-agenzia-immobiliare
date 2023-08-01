@@ -40,10 +40,14 @@ public class AgenziaImmobiliare {
         }
 
         //Metodo per restituire l’immobile che ha avuto il maggior numero di persone interessate
-        public void aumentoInteresse (int interessati) {
-            for () {
-
+        public String aumentoInteresse (int interessati) {
+            String piuBello = null;
+            int interessatomax = 0;
+            for (Immobili immobili : listaImmobili) {
+                if (immobili.getInteressati() > interessatomax) {
+                    piuBello = immobili.getCodice();
+                }
             }
-
+            return piuBello;
         }
 }

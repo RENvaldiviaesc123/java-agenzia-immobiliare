@@ -56,6 +56,8 @@ public class Immobili {
     //METODI
         //Metodo per aggiungere gli interessati all'acquisto dell'immobile
 
+
+
         //Metodo toString
         @Override
         public String toString() {
