@@ -16,6 +16,13 @@ public class AgenziaImmobiliare {
 
     //METODI
         //Metodo per aggiungere un immobile
+        public void aggiungiImmobile (Immobili immobili) {
+            String codice = immobili.getCodice();
+            if(trovaImmobilePerCodice(codice) != null) {
+                throw new IllegalArgumentException("Immobile con codice :" + codice + " già presenti in lista.")
+            }
+            listaImmobili.add(immobili);
+        }
 
         //Metodo per la ricerca di un immobile a partire dal codice alfanumerico
         public Immobili trovaImmobilePerCodice (String codice) {
@@ -33,4 +40,8 @@ public class AgenziaImmobiliare {
         }
 
         //Metodo per restituire l’immobile che ha avuto il maggior numero di persone interessate
+        public void aumentoInteresse (int interessati) {
+            int contatore =0;
+
+        }
 }
