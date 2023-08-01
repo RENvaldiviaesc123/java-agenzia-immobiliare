@@ -14,6 +14,10 @@ public class Villa extends Abitazione{
 
 
     //SETTER e GETTER
+        //Getter per gli attributi
+        public int getMqGiardino() {
+            return mqGiardino;
+        }
 
     //METODI
         //Metodo toString

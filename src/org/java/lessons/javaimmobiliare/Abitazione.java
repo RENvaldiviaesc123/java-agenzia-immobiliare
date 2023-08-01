@@ -14,6 +14,14 @@ public class Abitazione extends Immobili{
     }
 
     //SETTER e GETTER
+        //Getter per gli attributi
+        public int getNumBagni() {
+            return numBagni;
+        }
+
+        public int getNumVani() {
+            return numVani;
+        }
 
     //METODI
         //Metodo toString

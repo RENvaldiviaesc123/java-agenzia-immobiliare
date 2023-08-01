@@ -22,11 +22,41 @@ public class Immobili {
 
 
     //SETTER e GETTER
+        //Getter per gli attributi
+
+        public String getCodice() {
+            return codice;
+        }
+
+        public String getIndirizzo() {
+            return indirizzo;
+        }
+
+        public String getCap() {
+            return cap;
+        }
+
+        public String getCitta() {
+            return citta;
+        }
+
+        public int getAreaInMq() {
+            return areaInMq;
+        }
+
+        public int getInteressati() {
+            return interessati;
+        }
+        //Setter
+        public void setAreaInMq(int areaInMq) {
+            this.areaInMq = areaInMq;
+        }
+
 
     //METODI
         //Metodo per aggiungere gli interessati all'acquisto dell'immobile
 
-        //Metodo to string
+        //Metodo toString
         @Override
         public String toString() {
             return "Immobili{" +
@@ -37,5 +67,13 @@ public class Immobili {
                     ", areaInMq=" + areaInMq +
                     ", interessati=" + interessati +
                     '}';
+        }
+
+        //Metodo reimposta superfici che prende in input una nuova superficie
+        public int reimpostaSuperici () {
+            public void reimpostaSuperfici(int areaInMq) {
+                this.areaInMq = reimpostaSuperfici;
+            }
+            return reimpostaSuperici();
         }
 }

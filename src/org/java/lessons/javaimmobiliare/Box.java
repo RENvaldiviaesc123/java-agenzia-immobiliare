@@ -13,6 +13,10 @@ public class Box extends Immobili{
 
 
     //SETTER e GETTER
+        //Getter per gli attributi
+        public int getPostiAuto() {
+            return postiAuto;
+        }
 
     //METODI
         //Metodo toString
@@ -22,4 +26,6 @@ public class Box extends Immobili{
                     "postiAuto=" + postiAuto +
                     "} " ;
         }
+        //
+
 }
