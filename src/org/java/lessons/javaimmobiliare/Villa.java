@@ -16,4 +16,11 @@ public class Villa extends Abitazione{
     //SETTER e GETTER
 
     //METODI
+        //Metodo toString
+        @Override
+        public String toString() {
+            return super.toString() + ", Villa{" +
+                    "mqGiardino=" + mqGiardino +
+                    "} ";
+        }
 }

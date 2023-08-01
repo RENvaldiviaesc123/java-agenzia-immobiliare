@@ -16,12 +16,10 @@ public class Box extends Immobili{
 
     //METODI
         //Metodo toString
-
-
-    @Override
-    public String toString() {
-        return "Box{" +
-                "postiAuto=" + postiAuto +
-                "} " + super.toString();
-    }
+        @Override
+        public String toString() {
+            return super.toString() + ", Box{" +
+                    "postiAuto=" + postiAuto +
+                    "} " ;
+        }
 }

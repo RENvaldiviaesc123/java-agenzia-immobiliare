@@ -16,4 +16,12 @@ public class Abitazione extends Immobili{
     //SETTER e GETTER
 
     //METODI
+        //Metodo toString
+        @Override
+        public String toString() {
+            return super.toString() + ", Abitazione{" +
+                    "numBagni=" + numBagni +
+                    ", numVani=" + numVani +
+                    "} ";
+        }
 }

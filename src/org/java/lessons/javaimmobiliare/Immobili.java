@@ -27,16 +27,15 @@ public class Immobili {
         //Metodo per aggiungere gli interessati all'acquisto dell'immobile
 
         //Metodo to string
-
-    @Override
-    public String toString() {
-        return "Immobili{" +
-                "codice='" + codice + '\'' +
-                ", indirizzo='" + indirizzo + '\'' +
-                ", cap='" + cap + '\'' +
-                ", citta='" + citta + '\'' +
-                ", areaInMq=" + areaInMq +
-                ", interessati=" + interessati +
-                '}';
-    }
+        @Override
+        public String toString() {
+            return "Immobili{" +
+                    "codice='" + codice + '\'' +
+                    ", indirizzo='" + indirizzo + '\'' +
+                    ", cap='" + cap + '\'' +
+                    ", citta='" + citta + '\'' +
+                    ", areaInMq=" + areaInMq +
+                    ", interessati=" + interessati +
+                    '}';
+        }
 }
