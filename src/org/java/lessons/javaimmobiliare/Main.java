@@ -33,13 +33,20 @@ public class Main {
             System.out.println(agenziaImmobiliare.trovaImmobilePerCodice("VILLA01")); //v1
 
             //Restituiamo l'immobile con più persone interessate
-            System.out.println(agenziaImmobiliare.aumentoInteresse());
+            System.out.println(agenziaImmobiliare.piuInteressanti());
 
             //Aggiungiamo un immobile
             agenziaImmobiliare.aggiungiImmobile(new Villa("VILLA03", "Via dei Pazzi", "20158", "Meraviglie",
                     356, 6, 3, 6, 60));
                 //Stampiamo il nuovo immobile
                 System.out.println(agenziaImmobiliare.trovaImmobilePerCodice("VILLA03"));
+            //Aggiungiamo numero interessati
+            v2.aggiungiInteresati(20);
+            System.out.println(v2.toString());
+
+
+
+
 
 
 

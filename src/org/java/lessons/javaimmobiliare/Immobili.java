@@ -17,7 +17,7 @@ public class Immobili {
         this.cap = cap;
         this.citta = citta;
         this.areaInMq = areaInMq;
-        this.interessati = interessati=0;
+        this.interessati = interessati;
     }
 
 
@@ -55,9 +55,8 @@ public class Immobili {
 
     //METODI
         //Metodo per aggiungere gli interessati all'acquisto dell'immobile
-        public void aggiungiInteresati (int interessati) {
-            this.interessati= interessati;
-            interessati=+interessati;
+        public void aggiungiInteresati (int piaciuti) {
+            interessati += piaciuti;
 
         }
 
