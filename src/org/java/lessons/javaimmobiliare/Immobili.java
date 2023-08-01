@@ -70,10 +70,7 @@ public class Immobili {
         }
 
         //Metodo reimposta superfici che prende in input una nuova superficie
-        public int reimpostaSuperici () {
-            public void reimpostaSuperfici(int areaInMq) {
-                this.areaInMq = reimpostaSuperfici;
-            }
-            return reimpostaSuperici();
+        public void reimpostaSuperfici (int areaInMq) {
+            this.areaInMq = areaInMq;
         }
 }

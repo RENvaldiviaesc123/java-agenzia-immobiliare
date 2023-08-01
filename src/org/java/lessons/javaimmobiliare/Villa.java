@@ -19,6 +19,7 @@ public class Villa extends Abitazione{
             return mqGiardino;
         }
 
+
     //METODI
         //Metodo toString
         @Override
@@ -26,5 +27,11 @@ public class Villa extends Abitazione{
             return super.toString() + ", Villa{" +
                     "mqGiardino=" + mqGiardino +
                     "} ";
+        }
+
+        //Metodo per cambiare i mq
+        public void reimpostaSuperfici(int areaInMq, int mqGiardino) {
+            super.reimpostaSuperfici(areaInMq);
+            this.mqGiardino = mqGiardino;
         }
 }

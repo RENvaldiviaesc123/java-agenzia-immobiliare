@@ -41,7 +41,9 @@ public class AgenziaImmobiliare {
 
         //Metodo per restituire l’immobile che ha avuto il maggior numero di persone interessate
         public void aumentoInteresse (int interessati) {
-            int contatore =0;
+            for () {
+
+            }
 
         }
 }
